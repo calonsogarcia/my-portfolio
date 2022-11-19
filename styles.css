@@ -52,3 +52,7 @@ ul li::before{
 .first-word{
     font-size: 60px;
 }
+
+h2, h3{
+    color: red;
+}
