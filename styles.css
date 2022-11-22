@@ -65,7 +65,30 @@ ul li::before{
     font-size: 60px;
 }
 
+.card-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
 
+.card{
+    margin: 20px;
+    width: 250px;
+    height: 100px;
+    border: 10px solid black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
 
 
