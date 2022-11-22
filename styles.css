@@ -71,7 +71,7 @@ ul li::before{
     flex-wrap: wrap;
 }
 
-.card{
+.card-class{
     margin: 20px;
     width: 250px;
     height: 100px;
