@@ -10,6 +10,19 @@ h1{
     margin: 10px;
 }
 
+.title{
+    background-color: plum;
+    width: 100vw;
+    animation-name: titleColorChange;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes titleColorChange {
+    from{ background-color: plum;}
+    to{ background-color: rgb(255, 127, 185)}
+}
+
 #navbar{
     background: rgb(0, 255, 204);
 }
@@ -28,6 +41,21 @@ h1{
     width: 300px;
     height: 200px;
     border: 10px solid #fe6464;
+    animation-name: spinningPrettyMe;
+    animation-duration: 1.5s;
+    animation-iteration-count: 10;
+}
+
+@keyframes spinningPrettyMe {
+    0%{
+        border: 15px solid blue;
+    }
+    50%{
+        rotate: -360deg;
+    }
+    100%{
+        scale: 2;
+    }
 }
 
 ul li{
@@ -80,6 +108,16 @@ ul li::before{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition-duration: 3s;
+    transition-delay: 0.5s;
+}
+
+
+.card-class:hover{
+    background-color: #fe6464;
+    color: #9dfe64;
+    width: 500px;
+    height: 300px;
 }
 
 #contact{
@@ -91,8 +129,34 @@ ul li::before{
 }
 
 
+.contactButton{
+    border: 2px solid yellow;
+    background-color: green;
+    color: white;
 
+}
 
+.contactButton:hover{
+    animation-name: contactButtonAnim;
+    animation-duration: 2s;
+    animation-duration: alternate;
+}
+
+@keyframes contactButtonAnim {
+    5%{
+        rotate: 10deg;
+    }
+    10%{
+        rotate: 0deg
+    }
+    50%{
+        translate: 20deg;
+        background-color: #fe6464;
+    }
+    100%{
+        scale: 4;
+    }
+}
 
 
 
